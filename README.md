@@ -8,6 +8,12 @@
 | email     | string  | null: false |
 | password  | string  | null: false |
 
+### Association
+
+- has_many :room_users
+- has_many :rooms, through: room_users
+- has_many :messages
+
 ## rooms テーブル
 
 |  Column   |  Type   | Options     |
@@ -44,4 +50,3 @@
 
 - belongs_to :room
 - belongs_to :user
-
