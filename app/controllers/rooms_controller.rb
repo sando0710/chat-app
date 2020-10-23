@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-  def 
+  def index
   end
 
   def create
